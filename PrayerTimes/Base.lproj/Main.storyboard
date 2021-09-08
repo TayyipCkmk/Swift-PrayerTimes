@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vSN-29-MNK">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Login" id="BYZ-38-t0r" customClass="ViewController" customModule="PrayerTimes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBack" translatesAutoresizingMaskIntoConstraints="NO" id="aGE-KT-HCv">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaR-87-nDI">
+                                <rect key="frame" x="28" y="689" width="358" height="69"/>
+                                <color key="backgroundColor" red="0.85588610170000001" green="0.8296663165" blue="0.68325096370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="qyO-GI-vp4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="40"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButtonFunc:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cqv-Hn-wzd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payer Times App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CoT-OB-0Fg">
+                                <rect key="frame" x="0.0" y="200" width="414" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="4z6-9c-Iab"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="45"/>
+                                <color key="textColor" systemColor="systemGray5Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CoT-OB-0Fg" firstAttribute="centerX" secondItem="DaR-87-nDI" secondAttribute="centerX" id="1pS-Ui-FJz"/>
+                            <constraint firstItem="aGE-KT-HCv" firstAttribute="leading" secondItem="CoT-OB-0Fg" secondAttribute="leading" id="5JI-M0-Bzm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DaR-87-nDI" secondAttribute="bottom" constant="104" id="CcA-9j-MHT"/>
+                            <constraint firstItem="DaR-87-nDI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="PiZ-SA-4S1"/>
+                            <constraint firstItem="aGE-KT-HCv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="WbC-qi-r0a"/>
+                            <constraint firstItem="aGE-KT-HCv" firstAttribute="trailing" secondItem="CoT-OB-0Fg" secondAttribute="trailing" id="b9k-u6-aKm"/>
+                            <constraint firstItem="aGE-KT-HCv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="baW-b0-LHW"/>
+                            <constraint firstItem="CoT-OB-0Fg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="jud-jm-6cg"/>
+                            <constraint firstItem="aGE-KT-HCv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="o8A-25-56j"/>
+                            <constraint firstItem="aGE-KT-HCv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yXb-RN-YUJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="gzl-ew-M3G"/>
+                    <connections>
+                        <outlet property="loginButton" destination="DaR-87-nDI" id="ZNy-cW-9ac"/>
+                        <outlet property="loginImageView" destination="aGE-KT-HCv" id="I8z-dA-8Uo"/>
+                        <outlet property="loginLabel" destination="CoT-OB-0Fg" id="VSd-Qa-ihG"/>
+                        <segue destination="oEH-Ih-Uoq" kind="show" identifier="citysVc" id="YOu-Dz-979"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921.73913043478262" y="96.428571428571431"/>
+        </scene>
+        <!--Citys-->
+        <scene sceneID="ctb-ix-xjW">
+            <objects>
+                <viewController title="Citys" id="oEH-Ih-Uoq" customClass="CitysViewController" customModule="PrayerTimes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oYa-wA-WpU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rni-my-fUW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="nlD-pQ-tLV">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nlD-pQ-tLV" id="Lmw-JB-K9m">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="g2M-gb-f1n"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g2M-gb-f1n" firstAttribute="trailing" secondItem="rni-my-fUW" secondAttribute="trailing" id="Qin-rr-QQj"/>
+                            <constraint firstItem="rni-my-fUW" firstAttribute="top" secondItem="g2M-gb-f1n" secondAttribute="top" id="h9M-GK-PFz"/>
+                            <constraint firstItem="rni-my-fUW" firstAttribute="leading" secondItem="g2M-gb-f1n" secondAttribute="leading" id="lFl-Et-bdE"/>
+                            <constraint firstItem="g2M-gb-f1n" firstAttribute="bottom" secondItem="rni-my-fUW" secondAttribute="bottom" id="t1W-xr-9vI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Citys" id="BVE-M7-T3M"/>
+                    <connections>
+                        <outlet property="citysTableView" destination="rni-my-fUW" id="mp4-Ux-Hxv"/>
+                        <segue destination="QJw-pD-BMm" kind="show" identifier="townVc" id="m5V-Jt-Mae"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xeu-yK-aUt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1714.4927536231885" y="96.428571428571431"/>
+        </scene>
+        <!--Towns-->
+        <scene sceneID="Wcn-K6-p4M">
+            <objects>
+                <viewController title="Towns" id="QJw-pD-BMm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Msn-gv-8bz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hgw-q2-kNR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Towns" id="vOe-WI-US2"/>
+                    <connections>
+                        <segue destination="svF-Ad-UoC" kind="show" identifier="timesVc" id="keK-cC-11t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YEv-pc-9m5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2500" y="95.758928571428569"/>
+        </scene>
+        <!--Prayer Times-->
+        <scene sceneID="5nP-o4-pJI">
+            <objects>
+                <viewController title="Prayer Times" id="svF-Ad-UoC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j1z-ZX-IKP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="o5a-a1-BcQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Prayer Times" id="vc5-FC-zOW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fCc-UQ-lKZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3279.7101449275365" y="95.758928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="itc-J5-SYX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vSN-29-MNK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U7G-Jo-WLv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Fyb-fj-7cs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bCU-Im-VyF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.594202898550726" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="loginBack" width="564" height="1011"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
