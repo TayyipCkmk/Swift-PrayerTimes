@@ -7,7 +7,7 @@
 
 import Foundation
 import Alamofire
-protocol ListenerProtocol: class {}
+
 class Service {
     var baseUrl = ""
 
@@ -16,6 +16,9 @@ class Service {
     
     typealias townListCallBack = (_ townList:[Towns]?,_ status:Bool, _ message:String) -> Void
     var towncallBack: townListCallBack?
+    
+    typealias timesListCallBack = (_ timesList:[PrayerTimes]?,_ status:Bool, _ message:String) -> Void
+    var timescallBack: timesListCallBack?
     
     init(baseUrl: String) {
           self.baseUrl = baseUrl
@@ -26,6 +29,8 @@ class Service {
             self.callBack?(locations as? [Locations],true,"")
             guard let townLocations = response.value else { return }
             self.towncallBack?(townLocations as? [Towns],true,"")
+            guard let timesLocations = response.value else { return }
+            self.timescallBack?(timesLocations as? [PrayerTimes],true,"")
         }
     }
     func completionHandler(callBack: @escaping cityListCallBack) {
@@ -33,6 +38,9 @@ class Service {
     }
     func towncompletionHandler(towncallBack: @escaping townListCallBack) {
         self.towncallBack = towncallBack
+    }
+    func timescompletionHandler(timescallBack: @escaping timesListCallBack) {
+        self.timescallBack = timescallBack
     }
 }
 

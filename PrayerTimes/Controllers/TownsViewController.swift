@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TownsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+class TownsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var townList = [Towns]()
     var sehirId: String!
@@ -36,6 +36,13 @@ class TownsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let towncell = townsTableView.dequeueReusableCell(withIdentifier: "towncell")!
         towncell.textLabel?.text = townList[indexPath.row].ilceAdi
         return towncell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let timesStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let ilceId = timesStoryboard.instantiateViewController(withIdentifier: "timesVc") as! PrayerTimesViewController
+            ilceId.ilceId = townList[indexPath.row].ilceID
+        self.navigationController?.pushViewController(ilceId, animated: true)
+        print(townList[indexPath.row].ilceID)
     }
     
 }
