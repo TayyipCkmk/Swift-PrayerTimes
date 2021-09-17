@@ -41,6 +41,6 @@ class CitysViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let sehirId = townStoryboard.instantiateViewController(withIdentifier: "townVc") as! TownsViewController
             sehirId.sehirId = cityList[indexPath.row].sehirID
         self.navigationController?.pushViewController(sehirId, animated: true)
-        print(cityList[indexPath.row].sehirID)
+        //print(cityList[indexPath.row].sehirID)
     }
 }

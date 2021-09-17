@@ -11,7 +11,6 @@
 		012656E0C4E479BE3377D6AE /* Pods_PrayerTimes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BBDCA43BE9F45B27903541 /* Pods_PrayerTimes.framework */; };
 		B725B8582782B00FA8DA6008 /* Pods_PrayerTimes_PrayerTimesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5F527B3C095F623632875EB /* Pods_PrayerTimes_PrayerTimesUITests.framework */; };
 		E1AA314C26EF650B009E713A /* Towns.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AA314B26EF650B009E713A /* Towns.swift */; };
-		E1AA315126EF7B9E009E713A /* TimesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AA315026EF7B9E009E713A /* TimesTableViewCell.swift */; };
 		E1AA315626EF7C39009E713A /* PrayerTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AA315526EF7C39009E713A /* PrayerTimes.swift */; };
 		E1AA315B26EF7D8D009E713A /* PrayerTimesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AA315A26EF7D8D009E713A /* PrayerTimesViewController.swift */; };
 		E1D21C4326E7A9F70074C0C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D21C4226E7A9F70074C0C6 /* AppDelegate.swift */; };
@@ -54,7 +53,6 @@
 		C93F411019AF6586ADBEFBD2 /* Pods-PrayerTimes-PrayerTimesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrayerTimes-PrayerTimesUITests.release.xcconfig"; path = "Target Support Files/Pods-PrayerTimes-PrayerTimesUITests/Pods-PrayerTimes-PrayerTimesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DB254078B057B9E1A9CC40F4 /* Pods-PrayerTimesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrayerTimesTests.debug.xcconfig"; path = "Target Support Files/Pods-PrayerTimesTests/Pods-PrayerTimesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E1AA314B26EF650B009E713A /* Towns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Towns.swift; sourceTree = "<group>"; };
-		E1AA315026EF7B9E009E713A /* TimesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimesTableViewCell.swift; sourceTree = "<group>"; };
 		E1AA315526EF7C39009E713A /* PrayerTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimes.swift; sourceTree = "<group>"; };
 		E1AA315A26EF7D8D009E713A /* PrayerTimesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimesViewController.swift; sourceTree = "<group>"; };
 		E1BBDCA43BE9F45B27903541 /* Pods_PrayerTimes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrayerTimes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,7 +198,6 @@
 				E1D21C8426E8A41B0074C0C6 /* CitysViewController.swift */,
 				E1D21C9B26E8D6710074C0C6 /* TownsViewController.swift */,
 				E1AA315A26EF7D8D009E713A /* PrayerTimesViewController.swift */,
-				E1AA315026EF7B9E009E713A /* TimesTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -460,7 +457,6 @@
 				E1D21C4326E7A9F70074C0C6 /* AppDelegate.swift in Sources */,
 				E1AA315626EF7C39009E713A /* PrayerTimes.swift in Sources */,
 				E1D21C8F26E8ABC50074C0C6 /* Service.swift in Sources */,
-				E1AA315126EF7B9E009E713A /* TimesTableViewCell.swift in Sources */,
 				E1D21C9C26E8D6710074C0C6 /* TownsViewController.swift in Sources */,
 				E1D21C4526E7A9F70074C0C6 /* SceneDelegate.swift in Sources */,
 				E1D21C9726E8AF980074C0C6 /* Location.swift in Sources */,

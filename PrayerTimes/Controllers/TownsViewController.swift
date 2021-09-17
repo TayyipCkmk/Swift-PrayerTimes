@@ -42,7 +42,7 @@ class TownsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let ilceId = timesStoryboard.instantiateViewController(withIdentifier: "timesVc") as! PrayerTimesViewController
             ilceId.ilceId = townList[indexPath.row].ilceID
         self.navigationController?.pushViewController(ilceId, animated: true)
-        print(townList[indexPath.row].ilceID)
+        //print(townList[indexPath.row].ilceID)
     }
     
 }

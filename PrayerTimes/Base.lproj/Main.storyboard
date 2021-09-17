@@ -23,7 +23,7 @@
                                 <rect key="frame" x="28" y="689" width="358" height="69"/>
                                 <color key="backgroundColor" red="0.85588610170000001" green="0.8296663165" blue="0.68325096370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="69" id="qyO-GI-vp4"/>
+                                    <constraint firstAttribute="height" constant="69" id="XED-0f-9Ec"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="40"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -35,9 +35,6 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payer Times App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CoT-OB-0Fg">
                                 <rect key="frame" x="0.0" y="200" width="414" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="94" id="4z6-9c-Iab"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="45"/>
                                 <color key="textColor" systemColor="systemGray5Color"/>
                                 <nil key="highlightedColor"/>
@@ -46,16 +43,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="CoT-OB-0Fg" firstAttribute="centerX" secondItem="DaR-87-nDI" secondAttribute="centerX" id="1pS-Ui-FJz"/>
-                            <constraint firstItem="aGE-KT-HCv" firstAttribute="leading" secondItem="CoT-OB-0Fg" secondAttribute="leading" id="5JI-M0-Bzm"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DaR-87-nDI" secondAttribute="bottom" constant="104" id="CcA-9j-MHT"/>
-                            <constraint firstItem="DaR-87-nDI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="PiZ-SA-4S1"/>
-                            <constraint firstItem="aGE-KT-HCv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="WbC-qi-r0a"/>
-                            <constraint firstItem="aGE-KT-HCv" firstAttribute="trailing" secondItem="CoT-OB-0Fg" secondAttribute="trailing" id="b9k-u6-aKm"/>
-                            <constraint firstItem="aGE-KT-HCv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="baW-b0-LHW"/>
-                            <constraint firstItem="CoT-OB-0Fg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="jud-jm-6cg"/>
-                            <constraint firstItem="aGE-KT-HCv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="o8A-25-56j"/>
-                            <constraint firstItem="aGE-KT-HCv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yXb-RN-YUJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DaR-87-nDI" secondAttribute="bottom" constant="104" id="3eI-yn-hF8"/>
+                            <constraint firstItem="aGE-KT-HCv" firstAttribute="leading" secondItem="CoT-OB-0Fg" secondAttribute="leading" id="5iB-0O-TNS"/>
+                            <constraint firstItem="aGE-KT-HCv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9qV-Ig-uIf"/>
+                            <constraint firstItem="aGE-KT-HCv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hsN-P0-NSM"/>
+                            <constraint firstItem="aGE-KT-HCv" firstAttribute="trailing" secondItem="CoT-OB-0Fg" secondAttribute="trailing" id="lEB-60-iEY"/>
+                            <constraint firstItem="DaR-87-nDI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="nAK-eJ-FVy"/>
+                            <constraint firstItem="DaR-87-nDI" firstAttribute="centerX" secondItem="CoT-OB-0Fg" secondAttribute="centerX" id="p8t-aF-aZE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="gzl-ew-M3G"/>
@@ -162,11 +156,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timesScreen" translatesAutoresizingMaskIntoConstraints="NO" id="OdJ-as-u2t">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="timesScreen" translatesAutoresizingMaskIntoConstraints="NO" id="OdJ-as-u2t">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="İmsak" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSY-tT-9oL">
-                                <rect key="frame" x="20" y="444" width="374" height="52"/>
+                                <rect key="frame" x="20" y="444" width="187" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.85588610170000001" green="0.8296663165" blue="0.68325096370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -174,7 +169,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Güneş" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOs-rI-ZQU">
-                                <rect key="frame" x="20" y="504" width="374" height="52"/>
+                                <rect key="frame" x="20" y="504" width="187" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.85588610170000001" green="0.8296663165" blue="0.68325096370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -182,7 +177,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Öğle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQ5-Hm-v9M">
-                                <rect key="frame" x="20" y="564" width="374" height="52"/>
+                                <rect key="frame" x="20" y="564" width="187" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.85588610170000001" green="0.8296663165" blue="0.68325096370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -190,7 +185,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="İkindi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2K5-Gv-2Gj">
-                                <rect key="frame" x="20" y="624" width="374" height="52"/>
+                                <rect key="frame" x="20" y="624" width="187" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.85588610170000001" green="0.8296663165" blue="0.68325096370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -198,7 +193,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Akşam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJy-l8-Oeh">
-                                <rect key="frame" x="20" y="684" width="374" height="52"/>
+                                <rect key="frame" x="20" y="684" width="187" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.85588610170000001" green="0.8296663165" blue="0.68325096370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
@@ -206,33 +201,61 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yatsı" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9n-nV-DxT">
-                                <rect key="frame" x="20" y="744" width="374" height="52"/>
+                                <rect key="frame" x="20" y="744" width="187" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.85588610170000001" green="0.8296663165" blue="0.68325096370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gün Doğum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJt-a0-WKD">
-                                <rect key="frame" x="0.0" y="385" width="135" height="51"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="İmsak" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFa-WX-aLw">
+                                <rect key="frame" x="215" y="443" width="187" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.85588610170000001" green="0.8296663165" blue="0.68325096370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gün Batım" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soC-Rm-X4v">
-                                <rect key="frame" x="279" y="385" width="135" height="51"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Güneş" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4CQ-64-SQc">
+                                <rect key="frame" x="215" y="503" width="187" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.85588610170000001" green="0.8296663165" blue="0.68325096370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sabah" translatesAutoresizingMaskIntoConstraints="NO" id="XOE-Uq-dZx">
-                                <rect key="frame" x="151" y="199" width="135" height="132"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Öğle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qop-MG-Xyo">
+                                <rect key="frame" x="215" y="563" width="187" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <color key="backgroundColor" red="0.85588610170000001" green="0.8296663165" blue="0.68325096370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="İkindi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYM-Re-92q">
+                                <rect key="frame" x="215" y="623" width="187" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85588610170000001" green="0.8296663165" blue="0.68325096370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AkşamKalan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asx-dA-IBB">
+                                <rect key="frame" x="215" y="683" width="187" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85588610170000001" green="0.8296663165" blue="0.68325096370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yatsı" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4C-QO-Yq0">
+                                <rect key="frame" x="215" y="743" width="187" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85588610170000001" green="0.8296663165" blue="0.68325096370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hicri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYP-r9-9pA">
                                 <rect key="frame" x="140" y="88" width="134" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -241,27 +264,47 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gün Doğum" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJt-a0-WKD">
+                                <rect key="frame" x="0.0" y="385" width="135" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85588610170000001" green="0.8296663165" blue="0.68325096370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gün Batım" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soC-Rm-X4v">
+                                <rect key="frame" x="279" y="385" width="135" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85588610170000001" green="0.8296663165" blue="0.68325096370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sabah" translatesAutoresizingMaskIntoConstraints="NO" id="XOE-Uq-dZx">
+                                <rect key="frame" x="151" y="198" width="135" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="o5a-a1-BcQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="OdJ-as-u2t" firstAttribute="top" secondItem="o5a-a1-BcQ" secondAttribute="top" id="5EE-YP-kAo"/>
-                            <constraint firstItem="o5a-a1-BcQ" firstAttribute="trailing" secondItem="OdJ-as-u2t" secondAttribute="trailing" id="7iL-rQ-xdg"/>
-                            <constraint firstItem="OdJ-as-u2t" firstAttribute="leading" secondItem="o5a-a1-BcQ" secondAttribute="leading" id="a2T-If-3HA"/>
-                            <constraint firstItem="o5a-a1-BcQ" firstAttribute="bottom" secondItem="OdJ-as-u2t" secondAttribute="bottom" id="xES-cM-M7D"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Prayer Times" id="vc5-FC-zOW"/>
                     <connections>
+                        <outlet property="aksamKalanLabel" destination="Asx-dA-IBB" id="tyF-Wn-ndY"/>
                         <outlet property="aksamLabel" destination="zJy-l8-Oeh" id="9NH-NH-c8X"/>
                         <outlet property="gunBatimLabel" destination="soC-Rm-X4v" id="Z2f-7B-uFg"/>
                         <outlet property="gunDogumLabel" destination="GJt-a0-WKD" id="5Nk-RD-mFo"/>
+                        <outlet property="gunesKalanLabel" destination="4CQ-64-SQc" id="LVj-FW-p17"/>
                         <outlet property="gunesLabel" destination="BOs-rI-ZQU" id="HoX-lt-Y4j"/>
                         <outlet property="hicriLabel" destination="LYP-r9-9pA" id="m2D-ps-czF"/>
+                        <outlet property="ikindiKalanLabel" destination="fYM-Re-92q" id="qdE-UP-mis"/>
                         <outlet property="ikindiLabel" destination="2K5-Gv-2Gj" id="Iy5-tl-U1g"/>
+                        <outlet property="imsakKalanLabel" destination="wFa-WX-aLw" id="1PK-6f-U91"/>
                         <outlet property="imsakLabel" destination="LSY-tT-9oL" id="xkY-oa-ceS"/>
+                        <outlet property="ogleKalanLabel" destination="Qop-MG-Xyo" id="hv4-0S-8Y9"/>
                         <outlet property="ogleLabel" destination="ZQ5-Hm-v9M" id="zEl-1U-7B5"/>
                         <outlet property="timeView" destination="XOE-Uq-dZx" id="1RF-Xf-e4N"/>
+                        <outlet property="yatsiKalanLabel" destination="X4C-QO-Yq0" id="Hhx-9i-oaZ"/>
                         <outlet property="yatsiLabel" destination="O9n-nV-DxT" id="abx-7i-7DB"/>
                     </connections>
                 </viewController>
